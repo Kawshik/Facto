@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 long num, fact = 1;
                 int i;
 
-                if(txt.getText().toString().equals("")){
+                if(txt.getText().toString().equals("") || txt.getText().toString().length()>=10){
                     fact = 0;
                 } else {
                     num = Long.parseLong(txt.getText().toString());
