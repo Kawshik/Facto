@@ -25,9 +25,13 @@ public class MainActivity extends AppCompatActivity {
                 long num, fact = 1;
                 int i;
 
-                num = Long.parseLong(txt.getText().toString());
-                for(i=1;i<=num;i++) {
-                    fact = fact * i;
+                if(txt.getText().toString().equals("")){
+                    fact = 0;
+                } else {
+                    num = Long.parseLong(txt.getText().toString());
+                    for(i=1;i<=num;i++) {
+                        fact = fact * i;
+                    }
                 }
 
                 String res = String.valueOf(fact);
